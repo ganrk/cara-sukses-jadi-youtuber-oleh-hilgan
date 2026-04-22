@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infografis: Blueprint Karir Streamer SMA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body { background-color: #0f172a; color: #f8fafc; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+.chart-container { position: relative; width: 100%; max-width: 100%; margin-left: auto; margin-right: auto; height: 350px; max-height: 400px; }
+@media (min-width: 768px) { .chart-container { height: 400px; } }
+.glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2); }
+.border-t-cyan { border-top: 4px solid #22d3ee; }
+.border-t-fuchsia { border-top: 4px solid #e879f9; }
+.border-t-amber { border-top: 4px solid #fbbf24; }
+.text-gradient { background: linear-gradient(to right, #22d3ee, #e879f9); -webkit-background-clip: text; background-clip: text; background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+</style>
+</head>
+<body class="p-4 sm:p-8 md:p-12">
+<!--
+PALETTE: Neon Gamer / Cyberpunk (Slate 900 background, Cyan 400, Fuchsia 400, Amber 400 accents).
+CONFIRMATION: I explicitly confirm that NEITHER Mermaid JS NOR SVG were used anywhere in the output within the HTML comments.
+PLAN SUMMARY: 
+1. Header: Establishes context for 11th-grade streaming ambitions.
+2. Grid Section 1 (Phase 0 & 1): Equipment & Vibe using text, HTML structured layout, and emojis.
+3. Grid Section 2 (Phase 2 Flow): HTML/CSS process flow for content repurposing.
+4. Grid Section 3 (Charts): Visualizing time balance (Donut) and growth targets (Line).
+5. Footer Section: Ethics and Counselor's advice.
+CHART CHOICES SUMMARY:
+- Time Balance -> Compare/Composition -> Donut Chart (Chart.js) -> Best to show how a student should divide their limited time. Confirm NO SVG.
+- Growth Targets -> Change over time -> Line Chart (Chart.js) -> Best for visualizing milestones and momentum. Confirm NO SVG.
+- Repurposing Flow -> Organize/Process -> HTML/Tailwind Diagram -> Meets constraint of no Mermaid/SVG while showing clear directional flow. Confirm NO SVG.
+-->
+
+<div class="max-w-7xl mx-auto space-y-8">
+    <header class="text-center py-10 mb-8 glass-card border-t-cyan">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">🎮 Blueprint Karir <span class="text-gradient">Streamer</span></h1>
+        <h2 class="text-xl md:text-2xl text-slate-300 font-medium mb-6">Edisi "From Zero to Hero" untuk Siswa Kelas 11</h2>
+        <p class="max-w-3xl mx-auto text-lg text-slate-400 leading-relaxed">
+            Kelas 11 adalah masa krusial. Kamu mulai memikirkan masa depan, tapi juga ingin tetap eksis dan berkreasi. Streaming bukan sekadar bermain game; ini tentang membangun personal branding dan disiplin diri tanpa harus mengorbankan nilai rapormu.
+        </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="glass-card border-t-cyan">
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">🛠️ Fase 0: Persiapan</h3>
+            <p class="text-slate-400 mb-6 text-sm">Prinsip "No Budget, No Problem". Jangan membebani orang tua, gunakan peralatan yang sudah ada di genggamanmu.</p>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-4">
+                    <div class="bg-slate-800 p-3 rounded-lg text-2xl">📱</div>
+                    <div>
+                        <strong class="text-cyan-400 block text-lg">Alat Tempur Dasar</strong>
+                        <span class="text-slate-300">HP & Headset bawaan. Gunakan Prism Live Studio atau Streamlabs Mobile.</span>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="bg-slate-800 p-3 rounded-lg text-2xl">📡</div>
+                    <div>
+                        <strong class="text-cyan-400 block text-lg">Stabilitas Koneksi</strong>
+                        <span class="text-slate-300">Kecepatan bukan segalanya. Pastikan ping stabil agar tidak buffering.</span>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="bg-slate-800 p-3 rounded-lg text-2xl">🆔</div>
+                    <div>
+                        <strong class="text-cyan-400 block text-lg">Identitas Digital</strong>
+                        <span class="text-slate-300">Pilih username catchy & samakan di semua platform (IG, TikTok, Twitch/YT).</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="glass-card border-t-fuchsia">
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">🎭 Fase 1: Temukan "Vibe"</h3>
+            <p class="text-slate-400 mb-6 text-sm">Menjadi replika streamer lain tidak akan mendatangkan penonton setia. Kamu butuh ciri khas.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                    <div class="text-fuchsia-400 font-bold mb-2">🎯 Tentukan Niche</div>
+                    <p class="text-sm text-slate-300">Fokus pada satu hal: Pro-player, Just Chatting lucu, atau belajar bareng.</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                    <div class="text-fuchsia-400 font-bold mb-2">🪝 The "Hook"</div>
+                    <p class="text-sm text-slate-300">Apa yang membuat orang betah? Ciri khas bicara atau reaksi unikmu.</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 sm:col-span-2 text-center">
+                    <div class="text-fuchsia-400 font-bold mb-2">⏱️ Konsistensi & Kewarasan</div>
+                    <p class="text-sm text-slate-300">Buat jadwal pasti (misal: Sabtu & Minggu 19.00). Dilarang stream saat besok ada ujian!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="glass-card border-t-amber md:col-span-2">
+        <div class="text-center mb-8">
+            <h3 class="text-3xl font-bold mb-2">🔄 Fase 2: Strategi Repurposing (Copy-Paste Pintar)</h3>
+            <p class="text-slate-400 max-w-2xl mx-auto">Streaming berjam-jam tidak akan efektif jika tidak diolah. Ubah sesi live kamu menjadi mesin penarik penonton menggunakan strategi funnel konten mikro.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 bg-slate-800 p-8 rounded-2xl border border-slate-700 overflow-x-auto">
+            <div class="flex flex-col items-center min-w-[150px]">
+                <div class="bg-red-600 text-white p-4 rounded-xl shadow-lg shadow-red-900/50 text-xl font-bold text-center w-full">🔴 Live Stream</div>
+                <div class="text-slate-400 mt-2 text-sm text-center">Record Everything</div>
+            </div>
+            
+            <div class="text-3xl text-amber-400 transform rotate-90 md:rotate-0">➡️</div>
+            
+            <div class="flex flex-col items-center min-w-[150px]">
+                <div class="bg-blue-600 text-white p-4 rounded-xl shadow-lg shadow-blue-900/50 text-xl font-bold text-center w-full">✂️ Editing</div>
+                <div class="text-slate-400 mt-2 text-sm text-center">Potong Momen Epik/Lucu</div>
+            </div>
+            
+            <div class="text-3xl text-amber-400 transform rotate-90 md:rotate-0">➡️</div>
+            
+            <div class="flex flex-col gap-3 min-w-[180px]">
+                <div class="bg-slate-950 text-white p-3 rounded-lg flex items-center justify-center gap-2 border border-slate-700"><span>📱</span> TikTok</div>
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-3 rounded-lg flex items-center justify-center gap-2"><span>📱</span> IG Reels</div>
+                <div class="bg-red-500 text-white p-3 rounded-lg flex items-center justify-center gap-2"><span>📱</span> YT Shorts</div>
+            </div>
+
+            <div class="text-3xl text-amber-400 transform rotate-90 md:rotate-0">➡️</div>
+
+            <div class="flex flex-col items-center min-w-[150px]">
+                <div class="bg-emerald-600 text-white p-4 rounded-xl shadow-lg shadow-emerald-900/50 text-xl font-bold text-center w-full">👥 Komunitas</div>
+                <div class="text-slate-400 mt-2 text-sm text-center">Penonton Setia Baru</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <section class="glass-card border-t-cyan">
+            <h3 class="text-2xl font-bold mb-4">⚖️ Keseimbangan Waktu Ideal</h3>
+            <p class="text-slate-400 mb-6 text-sm">Sebagai pelajar Kelas 11, sekolah tetap prioritas utama. Visualisasi ini menunjukkan rekomendasi pembagian waktu agar karir streaming dan akademik berjalan seimbang.</p>
+            <div class="chart-container">
+                <canvas id="timeChart"></canvas>
+            </div>
+        </section>
+
+        <section class="glass-card border-t-fuchsia">
+            <h3 class="text-2xl font-bold mb-4">📈 Milestone & Target (6 Bulan)</h3>
+            <p class="text-slate-400 mb-6 text-sm">Jangan terobsesi dengan angka besar di awal. Fokus pada pencapaian realistis. Setiap streamer raksasa pernah memulai dengan 0 penonton.</p>
+            <div class="chart-container">
+                <canvas id="milestoneChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <section class="glass-card border-t-amber bg-gradient-to-br from-slate-800 to-slate-900">
+        <h3 class="text-2xl font-bold mb-6 text-center text-amber-400">🛡️ Fase 3: The Real Talk (Etika & Pendidikan)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center p-4">
+                <div class="text-4xl mb-4">🎓</div>
+                <h4 class="font-bold text-lg mb-2">Sekolah = Asuransi</h4>
+                <p class="text-sm text-slate-400">Streaming bisa naik turun. Ijazah SMA adalah fondasi yang menjamin masa depanmu tetap aman.</p>
+            </div>
+            <div class="text-center p-4">
+                <div class="text-4xl mb-4">👣</div>
+                <h4 class="font-bold text-lg mb-2">Jejak Digital</h4>
+                <p class="text-sm text-slate-400">Sekali toxic, internet akan mengingatnya. Bangun persona positif yang disukai calon kampus/perusahaan.</p>
+            </div>
+            <div class="text-center p-4">
+                <div class="text-4xl mb-4">🧠</div>
+                <h4 class="font-bold text-lg mb-2">Mental Health</h4>
+                <p class="text-sm text-slate-400">0 penonton itu normal di awal. Jangan baper, terus evaluasi konten dan jaga kesehatan mentalmu.</p>
+            </div>
+        </div>
+        
+        <div class="mt-8 p-6 bg-slate-950/50 rounded-xl border border-slate-700 text-center">
+            <h4 class="text-cyan-400 font-bold mb-2 uppercase tracking-widest text-sm">💡 Pesan Konselor</h4>
+            <blockquote class="text-xl italic text-slate-300">"Copy-paste cara orang sukses itu oke, tapi jangan lupa masukin 'jiwa' kamu di sana. Jangan cuma jadi replika, jadilah versi original yang paling dicari! Semangat, Player One!"</blockquote>
+        </div>
+    </section>
+</div>
+
+<script>
+function wrapLabel(label) {
+    if (label.length <= 16) return label;
+    let words = label.split(' ');
+    let lines = [];
+    let currentLine = '';
+    for (let i = 0; i < words.length; i++) {
+        if ((currentLine + words[i]).length > 16) {
+            if (currentLine.length > 0) lines.push(currentLine.trim());
+            currentLine = words[i] + ' ';
+        } else {
+            currentLine += words[i] + ' ';
+        }
+    }
+    if (currentLine.trim().length > 0) lines.push(currentLine.trim());
+    return lines;
+}
+
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.font.family = 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif';
+
+const ctxTime = document.getElementById('timeChart').getContext('2d');
+const rawLabelsTime = ["Belajar & Sekolah Dasar", "Sesi Live Streaming", "Editing Konten Mikro", "Istirahat & Sosialisasi"];
+const labelsTime = rawLabelsTime.map(wrapLabel);
+
+new Chart(ctxTime, {
+    type: 'doughnut',
+    data: {
+        labels: labelsTime,
+        datasets: [{
+            data: [45, 20, 15, 20],
+            backgroundColor: [
+                '#22d3ee', 
+                '#e879f9', 
+                '#fbbf24', 
+                '#64748b'  
+            ],
+            borderWidth: 0,
+            hoverOffset: 10
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: { padding: 20, font: { size: 12 } }
+            },
+            tooltip: {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                            return label.join(' ');
+                        } else {
+                            return label;
+                        }
+                    },
+                    label: function(context) {
+                        return ' ' + context.parsed + '% Total Waktu Harian';
+                    }
+                }
+            }
+        },
+        cutout: '70%'
+    }
+});
+
+const ctxMilestone = document.getElementById('milestoneChart').getContext('2d');
+const rawLabelsMilestone = ["Bulan 1: Mulai Siaran Bebas Kendala", "Bulan 3: Capai 50 Followers Pertama", "Bulan 6: Analitik Data & Pro Editing"];
+const labelsMilestone = rawLabelsMilestone.map(wrapLabel);
+
+new Chart(ctxMilestone, {
+    type: 'line',
+    data: {
+        labels: labelsMilestone,
+        datasets: [{
+            label: 'Target Pertumbuhan Followers',
+            data: [5, 50, 150],
+            borderColor: '#e879f9',
+            backgroundColor: 'rgba(232, 121, 249, 0.2)',
+            borderWidth: 3,
+            pointBackgroundColor: '#22d3ee',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            pointHoverRadius: 8,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: { color: 'rgba(148, 163, 184, 0.1)' }
+            },
+            x: {
+                grid: { display: false }
+            }
+        },
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                            return label.join(' ');
+                        } else {
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+</body>
+</html>
